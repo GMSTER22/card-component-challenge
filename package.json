@@ -1,0 +1,19 @@
+{
+  "name": "card-component-challenge",
+  "version": "1.0.0",
+  "description": "Taking on the challenge of frontend mentor card component",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/style.scss css/style.css -w"
+  },
+  "keywords": [
+    "frontend-mentor-challenge",
+    "card-component-challenge",
+    "taking-on-a-challenge"
+  ],
+  "author": "Gael Nongnogo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.37.5"
+  }
+}

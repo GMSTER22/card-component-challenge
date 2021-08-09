@@ -1,0 +1,159 @@
+//primary colors
+
+$color-blue-dark: hsl(233, 47%, 7%);
+$color-blue-light: hsl(244, 38%, 16%);
+$color-violet: hsl(277, 64%, 61%);
+
+// neutral colors
+
+$color-white: hsl(0, 0%, 100%);
+$color-transparent-1: hsla(0, 0%, 100%, 0.75);
+$color-transparent-1: hsla(0, 0%, 100%, 0.6);
+
+// media query mixin
+
+//     375px == 23.44em;
+
+@mixin respond($breakpoint) {
+    @if ($breakpoint == phone) {
+        @media (max-width: 23.44em) {@content};
+    }
+}
+
+// .attribution { font-size: 11px; text-align: center; }
+// .attribution a { color: hsl(228, 45%, 44%); }
+
+
+*, 
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;          // 1rem = 10px;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-family: Inter, sans-serif ;
+    color: $color-white;
+    background-color: $color-blue-dark; 
+
+    @include respond(phone) {
+        font-size: 1.2rem;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 144rem;
+    padding: 11rem;
+
+    @include respond(phone) {
+        width: 100%;
+        padding: 2rem;
+    }
+    
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-blue-light;
+    border-radius: 1rem;
+    width: 110rem;
+    height: 40rem;
+    overflow: hidden;
+
+    @include respond(phone) { 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 100%;
+        height: 90%;
+    }
+
+    &__text {
+        width: 50%;
+        padding: 5rem;
+        text-align: left;
+
+
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+            order: 1;
+        }
+    }
+
+    &__heading {
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 2rem;
+
+        &-1 {
+            color: $color-violet;
+        }
+    }
+
+    &__paragraph {
+        color: hsla(0, 0%, 100%, 0.75);
+        margin-bottom: 7rem;
+        line-height: 1.5;
+
+        @include respond(phone) { margin-bottom: 4rem; }
+    }
+
+    &__stats {
+        color: hsl(0, 0%, 100%, 0.75);
+        list-style: none;        
+    }
+    
+    &__stat {
+        display: inline-block;
+        margin-right: 4.5rem;
+
+        @include respond(phone) { display: inline; }
+
+        &-heading {
+            color: hsla(0, 0%, 100%);
+            font-weight: 700;
+        }
+
+        &-text {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &__photo {
+        position: relative;
+        width: 50%;
+        height: 100%;
+
+        @include respond(phone) {  width: 100%; }
+
+        &-overlay {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba($color-violet, .6);
+            z-index: 5;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}

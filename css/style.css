@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: Inter, sans-serif;
+  color: white;
+  background-color: #090b1a;
+}
+@media (max-width: 23.44em) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 144rem;
+  padding: 11rem;
+}
+@media (max-width: 23.44em) {
+  .container {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1938;
+  border-radius: 1rem;
+  width: 110rem;
+  height: 40rem;
+  overflow: hidden;
+}
+@media (max-width: 23.44em) {
+  .card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+  }
+}
+.card__text {
+  width: 50%;
+  padding: 5rem;
+  text-align: left;
+}
+@media (max-width: 23.44em) {
+  .card__text {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+}
+.card__heading {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+}
+.card__heading-1 {
+  color: #aa5cdb;
+}
+.card__paragraph {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 7rem;
+  line-height: 1.5;
+}
+@media (max-width: 23.44em) {
+  .card__paragraph {
+    margin-bottom: 4rem;
+  }
+}
+.card__stats {
+  color: rgba(255, 255, 255, 0.75);
+  list-style: none;
+}
+.card__stat {
+  display: inline-block;
+  margin-right: 4.5rem;
+}
+@media (max-width: 23.44em) {
+  .card__stat {
+    display: inline;
+  }
+}
+.card__stat-heading {
+  color: white;
+  font-weight: 700;
+}
+.card__stat-text {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.card__photo {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+@media (max-width: 23.44em) {
+  .card__photo {
+    width: 100%;
+  }
+}
+.card__photo-overlay {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(170, 92, 219, 0.6);
+  z-index: 5;
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

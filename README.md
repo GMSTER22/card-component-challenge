@@ -49,7 +49,7 @@ Two screeshots of the design have been added to the folder, one for desktop and 
 
 ### What I learned
 
-I learned to use sass mixins to write media queries, and the use of variables for the color which is in my opinion a good practice, it makes the process much easier.
+I learned to use sass mixins to write media queries, and the use of variables for the color which is in my opinion a good practice, it makes the process much easier. The skill that I could't wait to learn was how to actually use git and github. Thanks to the requirements of frontend to push people to use github, I finally force myself to use it.
 
 ```css
 @mixin respond($breakpoint) {

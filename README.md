@@ -34,8 +34,8 @@ Two screeshots of the design have been added to the folder, one for desktop and 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/GMSTER22/card-component-challenge
+- Live Site URL: https://gmster22.github.io/card-component-challenge/
 
 ## My process
 
@@ -72,7 +72,7 @@ MDN (https://developer.mozilla.org/)
 ## Author
 
 - Website - [Gael Souleymane Nongnogo]
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@GMSTER22](https://www.frontendmentor.io/profile/GMSTER22)
 
 ## Acknowledgments
 
